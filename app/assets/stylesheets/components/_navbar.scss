@@ -1,60 +1,38 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+#menu {
+  display: flex;
+}
+
+#menuIcon {
+  display: none;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background-color: #2c2c2c;
-  padding: 10px 20px;
   color: #f5a623;
-  height: 90px;
-}
-
-.navbar-left {
-  flex: 1;
+  height: 5rem;
 }
 
 .brand-name {
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: bold;
 }
 
-.navbar-center {
-  flex: 2;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  align-items: center;
-}
-
-.navbar-center a {
+.menu-links a {
   color: #f5a623;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: bold;
-  font-family: 'Arial', sans-serif;
-}
-
-.navbar-center a:hover {
-  color: #fff;
-}
-
-.btn-menu:hover {
-  background-color: #FFA500; /* Orange background */
-  color: #333;
-  padding: 8px 15px;
-  border-radius: 20px;
-  font-weight: bold;
+  margin-right: 1rem;
   text-decoration: none;
-}
+  transition: color 0.5s ease;
 
-.navbar-right {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
 }
 
 .login-signup {
@@ -63,18 +41,19 @@ body {
   font-size: 14px;
   text-decoration: none;
   font-weight: bold;
-}
 
-.login-signup:hover {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
 }
 
 .fa-bicycle {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
+
 .login-signup {
   padding-left: 15px;
   padding-right: 15px;
@@ -90,4 +69,26 @@ body {
 .singed-in-user {
   font-size: 14px;
   padding-right: 15px;
+}
+
+
+
+/* Responsive design */
+
+@media (max-width: 450px) {
+
+  #menuIcon{
+    display: block;
+    font-size: 3.6rem;
+  }
+
+  .brand-name {
+    font-size: 1rem;
+  }
+
+  a.btn-menu {
+    font-size: 0.8rem;
+    color: aliceblue;
+  }
+
 }
