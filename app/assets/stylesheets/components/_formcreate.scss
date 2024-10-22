@@ -1,6 +1,117 @@
-.form-control text required {
-  width: 77%;;
-}
-.mapboxgl-ctrl-geocoder.mapboxgl-ctrl {
+/* General form styles */
+.formular {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   width: 100%;
+  box-sizing: border-box;
+}
+
+.formular-content {
+  width: 100%;
+  max-width: 500px; /* Maximum width for the form */
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-h1 h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Form field styles */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group .form-control {
+  width: 100%; /* Make inputs responsive */
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+/* Button style */
+.actions .btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .formular-content {
+    padding: 15px;
+  }
+
+  .container-h1 h1 {
+    font-size: 1.75rem;
+  }
+
+  .actions .btn {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .formular-content {
+    padding: 10px;
+  }
+
+  .container-h1 h1 {
+    font-size: 1.5rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .actions .btn {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .formular-content {
+    padding: 5px;
+  }
+
+  .container-h1 h1 {
+    font-size: 1.25rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+
+  .actions .btn {
+    font-size: 0.75rem;
+  }
 }
