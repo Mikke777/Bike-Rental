@@ -1,33 +1,31 @@
-// Grundlegendes Styling für die Card-Container
 .card-deck {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 20px 0;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     display: block;
   }
 }
 
-// Styling für jede einzelne Card
 .card {
+  margin-top: 0.5rem;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 10px; // Fügt einen Abstand zwischen den Cards hinzu
-  width: 100px; // Verkleinert die Breite der Cards
-  flex: 1 1 auto; // Cards passen sich flexibel dem verfügbaren Platz an
-  width: 250px;
+  width: 20vw;
+  flex: 1 1 auto;
 
   @media (max-width: 768px) {
-    flex: 1 1 100%; // Karten nehmen 100% des verfügbaren Platzes auf Mobilgeräten ein
+    flex: 1 1 100%;
+    width: 100%;
   }
 
   .card-img-top {
     border-radius: 8px 8px 0 0;
-    height: 150px; // Verkleinert die Höhe des Bildes
-    object-fit: cover; // Bild wird skaliert, um den Raum auszufüllen, ohne das Seitenverhältnis zu verzerren
+    height: 150px;
+    object-fit: cover;
   }
 
   .card-body {
@@ -43,8 +41,8 @@
       font-size: 0.95rem;
       margin-bottom: 12px;
       color: #555;
-      white-space: nowrap; /* Prevents text from wrapping to the next line */
-      overflow: hidden; /* Hides overflowed content */
+      white-space: nowrap;
+      overflow: hidden;
       text-overflow: ellipsis;
     }
   }
@@ -57,7 +55,7 @@
     background-color: #f8f9fa;
 
     &:nth-child(odd) {
-      background-color: #e9ecef; // Abwechselnde Hintergrundfarben für bessere Lesbarkeit
+      background-color: #e9ecef;
     }
   }
 
