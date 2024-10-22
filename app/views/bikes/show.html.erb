@@ -44,7 +44,7 @@
           <%= link_to 'Edit', edit_bike_path(@bike), class: 'btn btn-warning' %>
       <% else %>
         <%= form_with url: book_bike_path(@bike), method: :post, local: true do %>
-          <%= submit_tag "Book now for: #{number_to_currency(@bike.price)}€", class: "btn-booknow" %>
+          <%= submit_tag "Book now for: #{number_to_currency(@bike.price)}€", class: "btn-booknow", style:"background: #333" %>
         <% end %>
       <% end %>
     </div>

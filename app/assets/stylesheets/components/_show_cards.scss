@@ -40,6 +40,21 @@
 
 .btn-booknow {
   display: inline-block;
+  border: none;
   text-decoration: none;
   text-align: center;
+  color: #FFA500;
+  background-color: #333;
+}
+
+@media (max-width: 510px) {
+  .card-show-bike-infos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-show-bike-infos-text {
+    margin-top: 0;
+    text-align: center;
+  }
 }
